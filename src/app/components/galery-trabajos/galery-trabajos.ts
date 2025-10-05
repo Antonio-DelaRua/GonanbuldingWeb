@@ -11,14 +11,14 @@ import { CommonModule } from '@angular/common';
 export class GaleryTrabajos {
   // Small curated set of images from the project's assets folder.
   images = [
-    { src: 'assets/img/project1.jpg', alt: 'Proyecto 1 - exterior', title: '2022' },
-    { src: 'assets/img/service1.jpg', alt: 'Proyecto 2 - detalle interior', title: '2022' },
-    { src: 'assets/img/service2.jpg', alt: 'Proyecto 3 - obra en progreso', title: 'Proyecto 3' },
-    { src: 'assets/img/service3.jpg', alt: 'Proyecto 4 - instalación', title: 'Proyecto 4' },
-    { src: 'assets/img/service4.jpg', alt: 'Proyecto 5 - revestimiento', title: 'Proyecto 5' },
-    { src: 'assets/img/service5.jpg', alt: 'Proyecto 6 - acabados', title: 'Proyecto 6' },
-    { src: 'assets/img/service6.jpg', alt: 'Proyecto 7 - exteriores', title: 'Proyecto 7' },
-    { src: 'assets/img/21.png', alt: 'Proyecto 8 - muestra', title: 'Proyecto 8' }
+    { src: 'assets/img/foto2.png', alt: 'Proyecto 1 - exterior', title: '2022' },
+    { src: 'assets/img/foto3.png', alt: 'Proyecto 2 - detalle interior', title: '2022' },
+    { src: 'assets/img/foto4.png', alt: 'Proyecto 3 - obra en progreso', title: 'Proyecto 3' },
+    { src: 'assets/img/foto5.png', alt: 'Proyecto 4 - instalación', title: 'Proyecto 4' },
+    { src: 'assets/img/foto7.png', alt: 'Proyecto 5 - revestimiento', title: 'Proyecto 5' },
+    { src: 'assets/img/foto13.png', alt: 'Proyecto 6 - acabados', title: 'Proyecto 6' },
+    { src: 'assets/img/foto15.png', alt: 'Proyecto 7 - exteriores', title: 'Proyecto 7' },
+    { src: 'assets/img/foto2.png', alt: 'Proyecto 8 - muestra', title: 'Proyecto 8' }
   ];
 
   selectedIndex: number | null = null;

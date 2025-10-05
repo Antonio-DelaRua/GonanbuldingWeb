@@ -39,13 +39,10 @@
   font-weight: bold;
   transition: background 0.2s;
 }
-.btn-warning:hover {
-  background: #ff9800;
-  color: #fff;
-}
+
 
 .navbar-main {
-  background: #23272b;
+  background: #27364E;
   padding: 0;
 }
 .navbar-menu {
@@ -69,7 +66,7 @@
   color: #089cff;
 }
 .btn-custom {
-  background: #089cff;
+  background: #27364E;
   color: #fff;
   font-weight: bold;
   border: 2px solid transparent;   /* SIEMPRE hay un borde de 2px, pero transparente */
@@ -90,8 +87,8 @@
 .btn-custom:hover,
 .btn-custom:focus {
   background: #fff;
-  color: #089cff;
-  border-color: #089cff;        /* Solo cambiamos el color del borde */
+  color: #27364E;
+  border-color: #27364E;        /* Solo cambiamos el color del borde */
   box-shadow: 0 6px 18px rgba(8, 156, 255, 0.13);
   transform: translateY(-2px) scale(1.03);
   text-decoration: none;

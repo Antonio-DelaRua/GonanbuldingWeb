@@ -18,7 +18,7 @@
 
 .footer-widget .widget-title {
   color: #fff;
-  border-left: 5px solid #089cff;
+  border-left: 5px solid #27364E;
   padding-left: 10px;
   font-size: 1.22rem;
   font-weight: bold;
@@ -51,7 +51,7 @@
 .footer-social a {
   color: #fff;
   font-size: 1.38rem;
-  background: #089cff;
+  background: #27364E;
   border-radius: 50%;
   width: 38px;
   height: 38px;
@@ -72,7 +72,6 @@
   line-height: 1.7;
 }
 .working-hours span {
-  color: #089cff;
   font-weight: 500;
   margin-left: 7px;
 }
@@ -91,7 +90,7 @@
   content: '➤';
   position: absolute;
   left: 0;
-  color: #089cff;
+  color: #27364E;
   font-size: 1rem;
   top: 0;
 }
@@ -115,7 +114,7 @@
   font-size: 0.97rem;
 }
 .copyright-info a {
-  color: #089cff;
+  color: #27364E;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s;
@@ -157,7 +156,7 @@
   z-index: 100;
 }
 #back-to-top .btn {
-  background: #089cff;
+  background: #27364E;
   color: #fff;
   border: none;
   border-radius: 50%;
@@ -172,7 +171,7 @@
 }
 #back-to-top .btn:hover {
   background: #fff;
-  color: #089cff;
+  color: #27364E;
 }
 
 @media (max-width: 1024px) {

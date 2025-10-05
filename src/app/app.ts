@@ -1,18 +1,13 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Navbar } from "./components/navbar/navbar";
-import { CarouselComponent } from "./components/carousel/carousel";
 import { FooterComponent } from "./components/footer/footer";
-import { Home } from "./pages/home/home";
-import { Grafico } from "./components/grafico/grafico";
-import { ServiciosHome } from "./components/servicios-home/servicios-home";
-import { Publi } from "./components/publi/publi";
-import { GaleryTrabajos } from "./components/galery-trabajos/galery-trabajos";
+
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Navbar, CarouselComponent, FooterComponent, Home, Grafico, ServiciosHome, Publi, GaleryTrabajos],
+  imports: [RouterOutlet, Navbar, FooterComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

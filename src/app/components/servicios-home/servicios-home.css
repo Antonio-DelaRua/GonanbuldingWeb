@@ -8,7 +8,7 @@
 .section-title {
   font-size: 2.5rem;
   font-weight: 800;
-  color: #23B4E9;
+  color: #27364E;
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -27,7 +27,7 @@
   height: 60px;
   object-fit: contain;
   transition: all 0.3s ease;
-  /* Convierte el icono a negro */
+  /* Convierte el icono a negro por defecto */
   filter: brightness(0) saturate(100%);
 }
 /* Cajas de servicio */
@@ -42,7 +42,7 @@
 
 .ts-service-box:hover {
   background: #ffffff;
-  border-left: 4px solid #23B4E9;
+  border-left: 4px solid #27364E;
   transform: translateX(10px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
@@ -61,7 +61,8 @@
 
 .ts-service-box:hover .ts-service-box-img img {
   transform: scale(1.1);
-  filter: brightness(0) saturate(100%) invert(44%) sepia(98%) saturate(1553%) hue-rotate(165deg) brightness(95%) contrast(101%);
+  /* Tint icon on hover toward #27364E (approximate using CSS filter) */
+  filter: brightness(0) saturate(100%) invert(35%) sepia(8%) saturate(500%) hue-rotate(190deg) brightness(95%) contrast(95%);
 }
 
 .ts-service-box-info {
@@ -73,7 +74,7 @@
 }
 
 .service-box-title a {
-  color: #333;
+  color: #27364E;
   font-size: 1.3rem;
   font-weight: 700;
   text-decoration: none;
@@ -83,7 +84,7 @@
 }
 
 .service-box-title a:hover {
-  color: #23B4E9;
+  color: #27364E;
 }
 
 .ts-service-box-info p {
@@ -98,7 +99,6 @@
   max-width: 100%;
   height: auto;
   border-radius: 15px;
-  
 }
 
 
@@ -109,7 +109,7 @@
 }
 
 .col-lg-4.mt-5.mt-lg-0.mb-4.mb-lg-0 .ts-service-box:hover {
-  border-right: 4px solid #23B4E9;
+  border-right: 4px solid #27364E;
   border-left: none;
   transform: translateX(-10px);
 }

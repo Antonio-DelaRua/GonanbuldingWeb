@@ -1,0 +1,200 @@
+<section class="contact-section">
+  <!-- Hero Section -->
+  <div class="contact-hero">
+    <div class="container">
+      <h1 class="hero-title">Construimos Tus Sueños</h1>
+      <p class="hero-subtitle">Contáctanos para transformar tus ideas en realidad</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="contact-grid">
+      <!-- Información de Contacto -->
+      <div class="contact-info">
+        <h2>Hablemos de Tu Proyecto</h2>
+        <p class="info-description">
+          Estamos aquí para ayudarte a materializar tu visión. Cuéntanos sobre tu proyecto 
+          y te asesoraremos sin compromiso.
+        </p>
+
+        <div class="contact-methods">
+          <!-- Teléfono -->
+          <div class="contact-method">
+            <div class="method-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M22 16.92V19.92C22 20.52 21.53 21 20.94 21C10.47 21 2 12.53 2 3.06C2 2.47 2.48 2 3.08 2H6.08C6.67 2 7.15 2.48 7.15 3.08C7.15 4.03 7.3 4.96 7.58 5.84C7.69 6.18 7.59 6.56 7.33 6.81L5.62 8.53C7.06 11.37 9.63 13.94 12.47 15.38L14.19 13.66C14.44 13.41 14.82 13.31 15.16 13.42C16.04 13.7 16.97 13.85 17.92 13.85C18.52 13.85 19 14.33 19 14.92Z" fill="currentColor"/>
+              </svg>
+            </div>
+            <div class="method-content">
+              <h3>Teléfono</h3>
+              <p>+34 912 345 678</p>
+              <span class="method-note">Lun-Vie: 8:00-18:00</span>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="contact-method">
+            <div class="method-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2"/>
+                <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="method-content">
+              <h3>Email</h3>
+              <p>info@construccionesejemplo.com</p>
+              <span class="method-note">Respondemos en 24h</span>
+            </div>
+          </div>
+
+          <!-- Oficina -->
+          <div class="contact-method">
+            <div class="method-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2Z" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 11.5C13.3807 11.5 14.5 10.3807 14.5 9C14.5 7.61929 13.3807 6.5 12 6.5C10.6193 6.5 9.5 7.61929 9.5 9C9.5 10.3807 10.6193 11.5 12 11.5Z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="method-content">
+              <h3>Oficina Central</h3>
+              <p>Calle Construcción, 123</p>
+              <p>28001 Madrid, España</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Servicios Destacados -->
+        <div class="services-highlight">
+          <h3>Servicios Principales</h3>
+          <div class="services-grid">
+            <div class="service-item">
+              <span class="service-bullet"></span>
+              <span>Reformas Integrales</span>
+            </div>
+            <div class="service-item">
+              <span class="service-bullet"></span>
+              <span>Construcción Nueva</span>
+            </div>
+            <div class="service-item">
+              <span class="service-bullet"></span>
+              <span>Rehabilitación</span>
+            </div>
+            <div class="service-item">
+              <span class="service-bullet"></span>
+              <span>Diseño Interior</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulario de Contacto -->
+      <div class="contact-form-container">
+        <h2>Solicita Presupuesto</h2>
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
+          
+          <!-- Nombre -->
+          <div class="form-group">
+            <label for="name">Nombre Completo *</label>
+            <input 
+              type="text" 
+              id="name" 
+              formControlName="name"
+              [class.error]="submitted && f['name'].errors"
+              placeholder="Tu nombre completo">
+            <div class="error-message" *ngIf="submitted && f['name'].errors">
+              <span *ngIf="f['name'].errors?.['required']">El nombre es obligatorio</span>
+              <span *ngIf="f['name'].errors?.['minlength']">Mínimo 2 caracteres</span>
+            </div>
+          </div>
+
+          <!-- Email y Teléfono -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input 
+                type="email" 
+                id="email" 
+                formControlName="email"
+                [class.error]="submitted && f['email'].errors"
+                placeholder="tu@email.com">
+              <div class="error-message" *ngIf="submitted && f['email'].errors">
+                <span *ngIf="f['email'].errors?.['required']">El email es obligatorio</span>
+                <span *ngIf="f['email'].errors?.['email']">Email no válido</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Teléfono *</label>
+              <input 
+                type="tel" 
+                id="phone" 
+                formControlName="phone"
+                [class.error]="submitted && f['phone'].errors"
+                placeholder="+34 600 000 000">
+              <div class="error-message" *ngIf="submitted && f['phone'].errors">
+                <span *ngIf="f['phone'].errors?.['required']">El teléfono es obligatorio</span>
+                <span *ngIf="f['phone'].errors?.['pattern']">Formato no válido</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Servicio y Presupuesto -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="service">Servicio de Interés *</label>
+              <select 
+                id="service" 
+                formControlName="service"
+                [class.error]="submitted && f['service'].errors">
+                <option value="">Selecciona un servicio</option>
+                <option value="reforma">Reforma Integral</option>
+                <option value="construccion">Construcción Nueva</option>
+                <option value="rehabilitacion">Rehabilitación</option>
+                <option value="diseno">Diseño Interior</option>
+                <option value="otros">Otros</option>
+              </select>
+              <div class="error-message" *ngIf="submitted && f['service'].errors">
+                Selecciona un servicio
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="budget">Presupuesto Aproximado</label>
+              <select id="budget" formControlName="budget">
+                <option value="">Selecciona rango</option>
+                <option value="5-15">5.000€ - 15.000€</option>
+                <option value="15-30">15.000€ - 30.000€</option>
+                <option value="30-50">30.000€ - 50.000€</option>
+                <option value="50+">Más de 50.000€</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Mensaje -->
+          <div class="form-group">
+            <label for="message">Describe Tu Proyecto *</label>
+            <textarea 
+              id="message" 
+              formControlName="message"
+              [class.error]="submitted && f['message'].errors"
+              rows="5"
+              placeholder="Cuéntanos los detalles de tu proyecto..."></textarea>
+            <div class="error-message" *ngIf="submitted && f['message'].errors">
+              <span *ngIf="f['message'].errors?.['required']">La descripción es obligatoria</span>
+              <span *ngIf="f['message'].errors?.['minlength']">Mínimo 10 caracteres</span>
+            </div>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit" class="submit-btn">
+            <span>Enviar Solicitud</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
