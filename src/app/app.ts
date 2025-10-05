@@ -7,11 +7,12 @@ import { Home } from "./pages/home/home";
 import { Grafico } from "./components/grafico/grafico";
 import { ServiciosHome } from "./components/servicios-home/servicios-home";
 import { Publi } from "./components/publi/publi";
+import { GaleryTrabajos } from "./components/galery-trabajos/galery-trabajos";
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Navbar, CarouselComponent, FooterComponent, Home, Grafico, ServiciosHome, Publi],
+  imports: [RouterOutlet, Navbar, CarouselComponent, FooterComponent, Home, Grafico, ServiciosHome, Publi, GaleryTrabajos],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

@@ -1,0 +1,27 @@
+<section class="gallery-section">
+	<h2 class="section-title">Nuestros trabajos</h2>
+    <h3 class="section-sub-title">Servicios</h3>
+
+	<div class="gallery-grid">
+		<figure class="gallery-item" *ngFor="let img of images; let i = index" (click)="open(i, $event)">
+			<img [src]="img.src" [alt]="img.alt" class="gallery-img" />
+			<figcaption class="gallery-caption">
+				<div class="caption-inner">
+					<h3>{{ img.title }}</h3>
+				</div>
+			</figcaption>
+		</figure>
+	</div>
+
+	<!-- Lightbox -->
+	<div class="lightbox" *ngIf="selectedIndex !== null" (click)="close($event)">
+		<button class="lightbox-close" (click)="close($event)" aria-label="Cerrar">×</button>
+		<button class="lightbox-nav left" (click)="prev($event)" aria-label="Anterior">‹</button>
+		<div class="lightbox-content" (click)="$event.stopPropagation()">
+			<img [src]="images[selectedIndex].src" [alt]="images[selectedIndex].alt" />
+			<p class="lightbox-title">{{ images[selectedIndex].title }}</p>
+		</div>
+		<button class="lightbox-nav right" (click)="next($event)" aria-label="Siguiente">›</button>
+	</div>
+
+</section>
