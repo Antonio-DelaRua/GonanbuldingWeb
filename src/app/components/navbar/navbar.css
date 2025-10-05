@@ -1,0 +1,111 @@
+.navbar-top {
+  background: #fff;
+  padding: 30px 0 10px 0;
+  border-bottom: 1px solid #eee;
+}
+.navbar-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.navbar-logo img {
+  margin-right: 10px;
+}
+.navbar-contact {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.navbar-contact .contact-title {
+  display: block;
+  font-size: 14px;
+  color: #444;
+}
+.navbar-contact .contact-value {
+  display: block;
+  font-size: 16px;
+  color: #222;
+}
+.navbar-cta {
+  margin-left: 30px;
+}
+.btn-warning {
+  background: #ffba08;
+  border: none;
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.btn-warning:hover {
+  background: #ff9800;
+  color: #fff;
+}
+
+.navbar-main {
+  background: #23272b;
+  padding: 0;
+}
+.navbar-menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar-menu li a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  padding: 18px 0;
+  transition: color 0.2s;
+}
+.navbar-menu li a.active,
+.navbar-menu li a:hover {
+  color: #089cff;
+}
+.btn-custom {
+  background: #089cff;
+  color: #fff;
+  font-weight: bold;
+  border: 2px solid transparent;   /* SIEMPRE hay un borde de 2px, pero transparente */
+  border-radius: 8px;
+  padding: 10px 30px;
+  font-size: 1rem;
+  box-shadow: 0 4px 12px rgba(8, 156, 255, 0.1);
+  letter-spacing: 1px;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    box-shadow 0.2s,
+    border-color 0.2s,
+    transform 0.1s;
+  outline: none;
+}
+
+.btn-custom:hover,
+.btn-custom:focus {
+  background: #fff;
+  color: #089cff;
+  border-color: #089cff;        /* Solo cambiamos el color del borde */
+  box-shadow: 0 6px 18px rgba(8, 156, 255, 0.13);
+  transform: translateY(-2px) scale(1.03);
+  text-decoration: none;
+}
+
+@media (max-width: 991px) {
+  .navbar-top-row,
+  .navbar-contact {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .navbar-menu {
+    flex-direction: column;
+    gap: 0;
+  }
+}
