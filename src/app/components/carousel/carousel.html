@@ -1,0 +1,17 @@
+<div class="carousel">
+  <div class="carousel-slide" 
+       *ngFor="let slide of slides; let i = index"
+       [class.active]="i === current"
+       [style.backgroundImage]="
+         'linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(' + slide.img + ')'
+       ">
+    <div class="carousel-content">
+      <span class="carousel-badge">{{slide.badge}}</span>
+      <h4 class="carousel-subtitle">{{slide.subtitle}}</h4>
+      <h1 class="carousel-title">{{slide.title}} <span class="highlight">{{slide.titleHighlight}}</span></h1>
+      <a class="btn-carousel" [routerLink]="slide.btnLink">{{slide.btnText}}</a>
+    </div>
+  </div>
+  <button class="carousel-arrow left" (click)="prev()">&lt;</button>
+  <button class="carousel-arrow right" (click)="next()">&gt;</button>
+</div>
