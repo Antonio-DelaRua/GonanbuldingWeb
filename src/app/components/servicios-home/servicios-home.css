@@ -22,7 +22,14 @@
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-
+.ts-service-box-img img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  transition: all 0.3s ease;
+  /* Convierte el icono a negro */
+  filter: brightness(0) saturate(100%);
+}
 /* Cajas de servicio */
 .ts-service-box {
   margin-bottom: 40px;

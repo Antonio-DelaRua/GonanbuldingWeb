@@ -6,11 +6,12 @@ import { FooterComponent } from "./components/footer/footer";
 import { Home } from "./pages/home/home";
 import { Grafico } from "./components/grafico/grafico";
 import { ServiciosHome } from "./components/servicios-home/servicios-home";
+import { Publi } from "./components/publi/publi";
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Navbar, CarouselComponent, FooterComponent, Home, Grafico, ServiciosHome],
+  imports: [RouterOutlet, Navbar, CarouselComponent, FooterComponent, Home, Grafico, ServiciosHome, Publi],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
