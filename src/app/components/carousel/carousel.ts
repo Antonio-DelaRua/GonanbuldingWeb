@@ -15,7 +15,7 @@ export class CarouselComponent {
 }
   slides = [
     {
-      img: 'assets/slider-main/bg1.jpg',
+      img: 'assets/img/22.jpg',
       badge: 'GONAN BUILDING CONSTRUCCIONES',
       subtitle: 'TE LO PONEMOS FACIL',
       title: 'ELIGE LOS MEJORES',

@@ -1,0 +1,110 @@
+.facts-area {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.facts-area::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.facts-wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.ts-facts {
+  text-align: center;
+  padding: 30px 20px;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+
+.ts-facts:hover {
+  transform: translateY(-10px);
+  background: rgba(35, 180, 233, 0.1);
+}
+
+.ts-facts-img {
+  margin-bottom: 20px;
+}
+
+.ts-facts-img img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  transition: all 0.3s ease;
+}
+
+.ts-facts:hover .ts-facts-img img {
+  filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(175deg);
+  transform: scale(1.1);
+}
+
+.ts-facts-num {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #23B4E9;
+  margin-bottom: 10px;
+  line-height: 1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.ts-facts-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Animación del contador */
+.counter {
+  display: inline-block;
+  font: inherit;
+  color: inherit;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .facts-area {
+    padding: 60px 0;
+  }
+  
+  .ts-facts {
+    padding: 20px 15px;
+    margin-bottom: 20px;
+  }
+  
+  .ts-facts-num {
+    font-size: 2.5rem;
+  }
+  
+  .ts-facts-title {
+    font-size: 1rem;
+  }
+  
+  .ts-facts-img img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .ts-facts-num {
+    font-size: 2rem;
+  }
+  
+  .ts-facts-title {
+    font-size: 0.9rem;
+  }
+}

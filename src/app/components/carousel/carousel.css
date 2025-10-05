@@ -28,7 +28,7 @@
   margin-left: 7vw;
 }
 .carousel-badge {
-  background: #ffba08;
+  background: #089cff;
   color: #222;
   font-weight: bold;
   padding: 7px 18px;
@@ -48,7 +48,7 @@
   line-height: 0.95;
 }
 .carousel-title .highlight {
-  color: #ffe600;
+  color: #089cff;
   font-weight: 900;
 }
 .btn-carousel {
