@@ -11,8 +11,8 @@ import { CommonModule } from '@angular/common';
 export class GaleryTrabajos {
   // Small curated set of images from the project's assets folder.
   images = [
-    { src: 'assets/img/project1.jpg', alt: 'Proyecto 1 - exterior', title: 'Proyecto 1' },
-    { src: 'assets/img/service1.jpg', alt: 'Proyecto 2 - detalle interior', title: 'Proyecto 2' },
+    { src: 'assets/img/project1.jpg', alt: 'Proyecto 1 - exterior', title: '2022' },
+    { src: 'assets/img/service1.jpg', alt: 'Proyecto 2 - detalle interior', title: '2022' },
     { src: 'assets/img/service2.jpg', alt: 'Proyecto 3 - obra en progreso', title: 'Proyecto 3' },
     { src: 'assets/img/service3.jpg', alt: 'Proyecto 4 - instalación', title: 'Proyecto 4' },
     { src: 'assets/img/service4.jpg', alt: 'Proyecto 5 - revestimiento', title: 'Proyecto 5' },
