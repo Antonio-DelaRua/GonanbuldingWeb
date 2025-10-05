@@ -70,30 +70,48 @@
   color: #222;
   border: 2px solid #fff;
 }
-.carousel-arrow {
+.carousel-dots {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #23272b;
-  color: #fff;
-  border: none;
-  font-size: 2rem;
-  width: 48px; height: 48px;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 2;
-  opacity: 0.7;
-  transition: background 0.2s, color 0.2s, opacity 0.2s;
+  width: 100%;
+  left: 0;
+  bottom: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  pointer-events: none; /* para que solo los dots sean clickeables */
 }
-.carousel-arrow.left { left: 25px; }
-.carousel-arrow.right { right: 25px; }
-.carousel-arrow:hover {
-  background: #089cff;
-  color: #fff;
+
+.carousel-dots .dot {
+  pointer-events: auto;
+  width: 12px;
+  height: 12px;
+  margin: 0 8px;
+  background: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  border: 2.5px solid #089cff;
+  opacity: 0.7;
+  transition: background 0.2s, border-color 0.2s, opacity 0.15s, transform 0.16s;
+  cursor: pointer;
+  box-shadow: 0 2px 6px #0003;
+}
+
+.carousel-dots .dot.active,
+.carousel-dots .dot:hover {
+  background: #646464;
+  border-color: #fff;
   opacity: 1;
+  transform: scale(1.18);
 }
 @media (max-width: 768px) {
-  .carousel-content { margin-left: 3vw; max-width: 94vw;}
-  .carousel-title { font-size: 2rem; }
-  .carousel { height: 260px; }
+  .carousel-arrow {
+    width: 38px;
+    height: 38px;
+    font-size: 1.6rem;
+    left: 8px;
+    right: 8px;
+  }
+  .carousel-arrow.left { left: 8px; }
+  .carousel-arrow.right { right: 8px; }
 }

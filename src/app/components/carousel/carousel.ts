@@ -10,6 +10,9 @@ import { NgFor } from '@angular/common';
   imports: [RouterModule,  NgFor], // Aquí SOLO van Componentes, Directivas, Pipes, o NgModules
 })
 export class CarouselComponent {
+  goToSlide(i: number) {
+  this.current = i;
+}
   slides = [
     {
       img: 'assets/slider-main/bg1.jpg',
@@ -31,6 +34,15 @@ export class CarouselComponent {
       btnLink: '/services'
     },
     {
+      img: 'assets/slider-main/bg1.jpg',
+      badge: 'GONAN BUILDING CONSTRUCCIONES',
+      subtitle: 'TE LO PONE',
+      title: 'ELIGE LOS MEJORES',
+      titleHighlight: 'PROFESIONALES',
+      btnText: 'ELIGE NUESTROS SERVICIOS',
+      btnLink: '/services'
+    },
+        {
       img: 'assets/slider-main/bg1.jpg',
       badge: 'GONAN BUILDING CONSTRUCCIONES',
       subtitle: 'TE LO PONE',

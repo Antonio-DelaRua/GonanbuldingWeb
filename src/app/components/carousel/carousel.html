@@ -12,6 +12,12 @@
       <a class="btn-carousel" [routerLink]="slide.btnLink">{{slide.btnText}}</a>
     </div>
   </div>
-  <button class="carousel-arrow left" (click)="prev()">&lt;</button>
-  <button class="carousel-arrow right" (click)="next()">&gt;</button>
+  <div class="carousel-dots">
+    <span 
+      *ngFor="let slide of slides; let i = index"
+      class="dot"
+      [class.active]="i === current"
+      (click)="goToSlide(i)">
+    </span>
+  </div>
 </div>
